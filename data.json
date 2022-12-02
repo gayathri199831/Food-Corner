@@ -1,0 +1,170 @@
+{
+ "fastFood":[
+    {
+        "name":"Manchuria",
+        "price":90,
+        "imagePath":"veg-manchurian.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"noodles",
+        "price":120,
+        "imagePath":"noodles.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"burger",
+        "price":250,
+        "imagePath":"menu_burger_img.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"Manchuria",
+        "price":90,
+        "imagePath":"veg-manchurian.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"noodles",
+        "price":120,
+        "imagePath":"noodles.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"burger",
+        "price":250,
+        "imagePath":"menu_burger_img.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"Manchuria",
+        "price":90,
+        "imagePath":"veg-manchurian.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"noodles",
+        "price":120,
+        "imagePath":"noodles.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"burger",
+        "price":250,
+        "imagePath":"menu_burger_img.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    }
+ ],
+ "deserts":[
+    {
+        "name":"iceCream",
+        "price":50,
+        "imagePath":"icecream.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"chocolate",
+        "price":75,
+        "imagePath":"chocolates.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"cake",
+        "price":70,
+        "imagePath":"clinkers-cake.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"iceCream",
+        "price":50,
+        "imagePath":"icecream.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"chocolate",
+        "price":75,
+        "imagePath":"chocolates.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"cake",
+        "price":70,
+        "imagePath":"clinkers-cake.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"iceCream",
+        "price":50,
+        "imagePath":"icecream.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"chocolate",
+        "price":75,
+        "imagePath":"chocolates.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"cake",
+        "price":70,
+        "imagePath":"clinkers-cake.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    }
+ ],
+ "mainCourse":[
+    {
+        "name":"Biryani",
+        "price":450,
+        "imagePath":"biryani.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"Paneer",
+        "price":199,
+        "imagePath":"paneer.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"thali",
+        "price":350,
+        "imagePath":"Kumaoni Thali.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"Biryani",
+        "price":450,
+        "imagePath":"biryani.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"Paneer",
+        "price":199,
+        "imagePath":"paneer.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"thali",
+        "price":350,
+        "imagePath":"Kumaoni Thali.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"Biryani",
+        "price":450,
+        "imagePath":"biryani.jpg",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"Paneer",
+        "price":199,
+        "imagePath":"paneer.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    },
+    {
+        "name":"thali",
+        "price":350,
+        "imagePath":"Kumaoni Thali.webp",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget interdum massa. Curabitur a semper justo. In fringilla lorem nec pretium iaculis. Quisque blandit augue quis tellus condimentum, a consequat lacus porta "
+    }
+ ]
+}
