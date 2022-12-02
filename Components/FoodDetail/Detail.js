@@ -1,35 +1,88 @@
+import { useState } from "react";
 import { Image, View, Text, StyleSheet, Button } from "react-native";
 
 const Detail = ({ route }) => {
-  const dish=route.params.data;
+  const dish = route.params.data;
+  const [counter, setCounter] = useState(1);
+
+  const increaseCounter = () => {
+    setCounter(counter + 1);
+  };
+
+  const decreaseCounter = () => {
+    setCounter(counter > 1 ? counter - 1 : counter);
+  };
+
+  let totalPrice=counter*dish.price;
+
   return (
     <View>
       <Image
         source={require(`C:/Learning/React-Native/Workspace/Food-Corner/assets/productImages/${dish.imagePath}`)}
-        style={{ width: 140, height: 140 }}
+        style={styles.foodImage}
       />
       <View>
         <Text style={styles.itemName}>{dish.name}</Text>
-        <Text>Rs. {dish.price}</Text>
+        <Text style={styles.itemPrice}>Rs. {dish.price} only</Text>
+        <Text style={styles.description}>{dish.description}</Text>
       </View>
+      <View style={styles.fixToText}>
+        <Text style={styles.itemPrice}>
+          Total : {totalPrice}
+        </Text>
+        <View style={styles.counter}>
+          <Button title="-" onPress={decreaseCounter} />
+          <Text style={styles.counterNumber}>{counter}</Text>
+          <Button title="+" onPress={increaseCounter} />
+        </View>
+      </View>
+
+      <Button title="Order Now" color="rgb(255,99,71)" />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  foodItem: {
-    borderWidth: 1,
-    borderColor: "gray",
-    width: "fit-content",
-    margin: 20,
-    borderRadius: 10,
+  description: {
+    fontSize: 20,
+    fontWeight: 400,
+    letterSpacing: 0.2,
+    textAlign: "justify",
     padding: 5,
   },
-  itemBox: {
-    display: "flex",
+  itemName: {
+    fontSize: 40,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  itemPrice: {
+    fontSize: 20,
+    fontWeight: 500,
+    marginTop: 5,
+    marginBottom: 8,
+    textAlign: "center",
+  },
+  foodImage: {
+    width: "100%",
+    height: 400,
+  },
+  fixToText: {
     flexDirection: "row",
-    flexWrap: "wrap",
-  }
+    padding: 3,
+    justifyContent: "space-between",
+    marginRight: 10,
+  },
+  counter: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+  },
+  counterNumber: {
+    marginLeft: 10,
+    marginRight: 10,
+    fontSize: 20,
+    fontWeight: 500,
+  },
 });
 
 export default Detail;
