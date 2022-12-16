@@ -4,18 +4,34 @@ import Detail from "../FoodDetail/Detail";
 import { useState } from "react";
 import FoodList from "./FoodList";
 
-const Body = ({navigation}) => {
-  const [foodContent, setFoodContent] = useState('fastFood');
+const Body = ({ navigation }) => {
+  const [foodContent, setFoodContent] = useState("fastFood");
 
   return (
     <>
       <View style={styles.tabs}>
-        <Text style={styles.tab} onPress={()=>setFoodContent('fastFood')}>Fast Food</Text>
-        <Text style={styles.tab} onPress={()=>setFoodContent('deserts')}>Deserts</Text>
-        <Text style={styles.tab} onPress={()=>setFoodContent('mainCourse')}>Main Course</Text>
+        <View></View>
+        <Text
+          style={foodContent == "fastFood" ? styles.tabActive : styles.tab}
+          onPress={() => setFoodContent("fastFood")}
+        >
+          Fast Food
+        </Text>
+        <Text
+          style={foodContent == "deserts" ? styles.tabActive : styles.tab}
+          onPress={() => setFoodContent("deserts")}
+        >
+          Deserts
+        </Text>
+        <Text
+          style={foodContent == "mainCourse" ? styles.tabActive : styles.tab}
+          onPress={() => setFoodContent("mainCourse")}
+        >
+          Main Course
+        </Text>
       </View>
       <View>
-        <FoodList type={foodContent} navigation={navigation}/>
+        <FoodList type={foodContent} navigation={navigation} />
       </View>
     </>
   );
@@ -26,7 +42,10 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: 20,
+    paddingTop: 20,
+    // paddingLeft:5,
+    paddingRight: 20,
+    // padding: 20,
     backgroundColor: "rgb(210,210,210)",
   },
   tab: {
@@ -34,6 +53,16 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     letterSpacing: 0.5,
     color: "rgb(90,90,90)",
+  },
+  tabActive: {
+    fontSize: 18,
+    fontWeight: "bold",
+    letterSpacing: 0.5,
+    color: "rgb(90,90,90)",
+    // borderBottomColor: "black",
+    //  borderWidth:2,
+    borderBottomWidth: 5,
+    paddingBottom: 15
   },
 });
 
