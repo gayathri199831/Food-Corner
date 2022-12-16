@@ -5,6 +5,9 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Main from "./Components/Dashboard/Main";
 import Detail from "./Components/FoodDetail/Detail";
+//import Checkout from "./Components/Order/Checkout";
+import ShippingDetails from "./Components/Shipping/ShippingDetails";
+import Checkout from "./Components/Shipping/Checkout";
 // import { createDrawerNavigator } from "@react-navigation/drawer";
 
 const Stack = createNativeStackNavigator();
@@ -18,12 +21,22 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={Main}
-          options={{...styles.detail,title:"Welcome to Food Corner"}}
+          options={{ ...styles.detail, title: "Welcome to Food Corner" }}
         />
-        <Stack.Screen 
-        name="Detail" 
-        component={Detail} 
-        options={{...styles.detail,title:"Ingredients"}}
+        <Stack.Screen
+          name="Detail"
+          component={Detail}
+          options={{ ...styles.detail }}
+        />
+        <Stack.Screen
+          name="shippingDetails"
+          component={ShippingDetails}
+          options={{ ...styles.detail }}
+        />
+        <Stack.Screen
+          name="Checkout"
+          component={Checkout}
+          options={{ ...styles.detail }}
         />
       </Stack.Navigator>
     </NavigationContainer>
@@ -37,7 +50,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  detail:{
+  detail: {
     title: "",
     headerStyle: {
       backgroundColor: "#f4511e",
@@ -47,5 +60,5 @@ const styles = StyleSheet.create({
       fontWeight: "bold",
     },
     headerTitleAlign: "center",
-  }
+  },
 });

@@ -44,6 +44,10 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
+  },
+  itemName:{
+    fontSize:18,
+    fontWeight:"bold"
   }
 });
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Image, View, Text, StyleSheet, Button } from "react-native";
 
-const Detail = ({ route }) => {
+const Detail = ({ route, navigation }) => {
   const dish = route.params.data;
   const [counter, setCounter] = useState(1);
 
@@ -13,7 +13,12 @@ const Detail = ({ route }) => {
     setCounter(counter > 1 ? counter - 1 : counter);
   };
 
-  let totalPrice=counter*dish.price;
+  const onOrderClick = () => {
+    const data = { ...dish, totalPrice, quantity: counter };
+    navigation.navigate("shippingDetails", { data: data });
+  };
+
+  let totalPrice = counter * dish.price;
 
   return (
     <View>
@@ -27,9 +32,7 @@ const Detail = ({ route }) => {
         <Text style={styles.description}>{dish.description}</Text>
       </View>
       <View style={styles.fixToText}>
-        <Text style={styles.itemPrice}>
-          Total : {totalPrice}
-        </Text>
+        <Text style={styles.itemPrice}>Total : {totalPrice}</Text>
         <View style={styles.counter}>
           <Button title="-" onPress={decreaseCounter} />
           <Text style={styles.counterNumber}>{counter}</Text>
@@ -37,7 +40,7 @@ const Detail = ({ route }) => {
         </View>
       </View>
 
-      <Button title="Order Now" color="rgb(255,99,71)" />
+      <Button title="Order Now" color="rgb(255,99,71)" onPress={onOrderClick} />
     </View>
   );
 };
