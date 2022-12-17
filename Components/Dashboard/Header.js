@@ -6,12 +6,33 @@ import {
   Text,
   Image,
   ImageBackground,
+  TextInput,
 } from "react-native";
 import { ScrollView } from "react-native-web";
 import Detail from "../FoodDetail/Detail";
+import data from "../../data.json";
+import { useState } from "react";
 
-const Header = ({navigation}) => {
+const Header = ({ navigation }) => {
+  const [filterData, setfilterData] = useState();
   // const image = {require('../../assets/')}
+  console.log("data-header", data);
+
+  const searchItem = (e) => {
+    const value = e.target.value.toLowerCase();
+    let foodData = [];
+
+    if (value.length > 2) {
+      for (let foodItem in data) {
+        console.log("foodItem", data[foodItem]);
+        let food = data[foodItem].filter((item) => {
+          let itemName = item.name.toLowerCase();
+          return itemName.includes(value);
+        });
+        console.log("filtered data", food);
+      }
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -21,14 +42,16 @@ const Header = ({navigation}) => {
         style={styles.image}
       >
         <View style={styles.imageBg}>
-          <Text
-            style={styles.text}
-            onPress={() => navigation.navigate("Detail", { name: "Home" })}
-          >
-            Hungry ??
-          </Text>
+          <Text style={styles.text}>Hungry ??</Text>
+          <TextInput
+            style={styles.search}
+            placeholder="Search...."
+            onChange={(e) => searchItem(e)}
+          />
         </View>
-       
+        {/* <View>
+         <Text style={color="white"}>Hiii</Text>
+        </View> */}
       </ImageBackground>
     </View>
   );
@@ -57,18 +80,15 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
   },
-  tabs: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    padding: 20,
-    backgroundColor: "rgb(210,210,210)",
-  },
-  tab: {
-    fontSize: 18,
-    fontWeight: "bold",
-    letterSpacing: 0.5,
-    color: "rgb(90,90,90)",
+  search: {
+    borderBottomColor: "white",
+    borderBottomWidth: 3,
+    color: "white",
+    padding: 8,
+    // width: 200,
+    marginHorizontal: "auto",
+    // borderRadius:10,
+    alignItems: "center",
   },
 });
 
