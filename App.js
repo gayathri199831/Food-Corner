@@ -8,6 +8,7 @@ import Detail from "./Components/FoodDetail/Detail";
 //import Checkout from "./Components/Order/Checkout";
 import ShippingDetails from "./Components/Shipping/ShippingDetails";
 import Checkout from "./Components/Shipping/Checkout";
+import WelcomePage from "./Components/Welcome/WelcomePage";
 // import { createDrawerNavigator } from "@react-navigation/drawer";
 
 const Stack = createNativeStackNavigator();
@@ -19,9 +20,18 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="WelcomePage"
+          component={WelcomePage}
+          options={{ ...styles.detail, headerShown: false }}
+        />
+        <Stack.Screen
           name="Home"
           component={Main}
-          options={{ ...styles.detail, title: "Welcome to Food Corner" }}
+          options={{
+            ...styles.detail,
+            title: "Welcome to SAGA foods",
+            headerLeft: null,
+          }}
         />
         <Stack.Screen
           name="Detail"

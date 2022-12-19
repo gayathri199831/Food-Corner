@@ -21,26 +21,34 @@ const Detail = ({ route, navigation }) => {
   let totalPrice = counter * dish.price;
 
   return (
-    <View>
-      <Image
-        source={require(`C:/Learning/React-Native/Workspace/Food-Corner/assets/productImages/${dish.imagePath}`)}
-        style={styles.foodImage}
-      />
+    <View style={styles.main}>
       <View>
-        <Text style={styles.itemName}>{dish.name}</Text>
-        <Text style={styles.itemPrice}>Rs. {dish.price} only</Text>
-        <Text style={styles.description}>{dish.description}</Text>
-      </View>
-      <View style={styles.fixToText}>
-        <Text style={styles.itemPrice}>Total : {totalPrice}</Text>
-        <View style={styles.counter}>
-          <Button title="-" onPress={decreaseCounter} />
-          <Text style={styles.counterNumber}>{counter}</Text>
-          <Button title="+" onPress={increaseCounter} />
+        <Image
+          source={require(`C:/Learning/React-Native/Workspace/Food-Corner/assets/productImages/${dish.imagePath}`)}
+          style={styles.foodImage}
+        />
+        <View>
+          <Text style={styles.itemName}>{dish.name}</Text>
+          <Text style={styles.itemPrice}>Rs. {dish.price} only</Text>
+          <Text style={styles.description}>{dish.description}</Text>
+        </View>
+        <View style={styles.fixToText}>
+          <Text style={styles.itemPrice}>Total : {totalPrice}</Text>
+          <View style={styles.counter}>
+            <Button title="-" onPress={decreaseCounter} />
+            <Text style={styles.counterNumber}>{counter}</Text>
+            <Button title="+" onPress={increaseCounter} />
+          </View>
         </View>
       </View>
 
-      <Button title="Order Now" color="rgb(255,99,71)" onPress={onOrderClick} />
+      <View>
+        <Button
+          title="Order Now"
+          color="rgb(255,99,71)"
+          onPress={onOrderClick}
+        />
+      </View>
     </View>
   );
 };
@@ -86,6 +94,10 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 500,
   },
+  main:{
+    flex:1,
+    justifyContent:"space-between"
+  }
 });
 
 export default Detail;

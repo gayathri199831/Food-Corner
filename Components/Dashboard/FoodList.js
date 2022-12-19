@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 import { Image, View, Text, StyleSheet, Button } from "react-native";
 import data from "../../data.json";
-const FoodList = ({ type ,navigation}) => {
-  const [foodData, setFoodData] = useState(data["fastFood"]);
-  useEffect(() => {
-    setFoodData(data[type]);
-  }, [type]);
-  console.log("data", foodData);
+const FoodList = ({ foodData ,navigation}) => {
+
+  // console.log("data", foodData);
 
   return (
     <>
@@ -44,6 +41,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
+    justifyContent:"center"
   },
   itemName:{
     fontSize:18,

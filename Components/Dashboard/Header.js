@@ -13,26 +13,8 @@ import Detail from "../FoodDetail/Detail";
 import data from "../../data.json";
 import { useState } from "react";
 
-const Header = ({ navigation }) => {
-  const [filterData, setfilterData] = useState();
-  // const image = {require('../../assets/')}
-  console.log("data-header", data);
+const Header = ({searchItem}) => {
 
-  const searchItem = (e) => {
-    const value = e.target.value.toLowerCase();
-    let foodData = [];
-
-    if (value.length > 2) {
-      for (let foodItem in data) {
-        console.log("foodItem", data[foodItem]);
-        let food = data[foodItem].filter((item) => {
-          let itemName = item.name.toLowerCase();
-          return itemName.includes(value);
-        });
-        console.log("filtered data", food);
-      }
-    }
-  };
 
   return (
     <View style={styles.container}>
